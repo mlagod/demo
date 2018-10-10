@@ -1,5 +1,7 @@
 package pl.consdata.demo.articles.api;
 
+import java.util.Date;
+
 public class ExternalArticleDTO {
 
 
@@ -27,7 +29,7 @@ public class ExternalArticleDTO {
     private String author;
     private String title;
     private String description;
-    private String publishedAt;
+    private Date publishedAt;
     private String urlToImage;
     private String url;
     private Source source;
@@ -57,11 +59,11 @@ public class ExternalArticleDTO {
         this.description = description;
     }
 
-    public String getPublishedAt() {
+    public Date getPublishedAt() {
         return publishedAt;
     }
 
-    public void setPublishedAt(String publishedAt) {
+    public void setPublishedAt(Date publishedAt) {
         this.publishedAt = publishedAt;
     }
 
